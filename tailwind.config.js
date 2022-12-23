@@ -4,6 +4,11 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},
+    gridTemplateColumns: {
+      // default value
+      'none': 'none',
+      '15': 'repeat(15, minmax(0, 1fr))',
+    },
   },
   variants: {
     extend: {},
