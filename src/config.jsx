@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-const titleDefault = 'React Three Next Starter'
+const titleDefault = 'Cade Cuddy'
 const url = 'https://react-three-next.vercel.app/'
-const description = 'The easiest and fastest way to create a 3D website using React Three Fiber and NextJS'
-const author = 'Author'
+const description = 'The portfolio of Cade Cuddy, a full-time CS student at NCSU.'
+const author = 'Cade Cuddy'
 
 export default function Header({ title = titleDefault }) {
   return (
@@ -19,10 +19,7 @@ export default function Header({ title = titleDefault }) {
       {/* Search Engine Optimization Meta Tags */}
       <title>{title}</title>
       <meta name='description' content={description} />
-      <meta
-        name='keywords'
-        content='Software Engineer,Product Manager,Project Manager,Data Scientist,Computer Scientist'
-      />
+      <meta name='keywords' content='Software Engineer,Computer Scientist, Cade Cuddy' />
       <meta name='robots' content='index,follow' />
       <meta name='distribution' content='web' />
       {/* 
