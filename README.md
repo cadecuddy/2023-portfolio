@@ -1,3 +1,3 @@
-# 3dportfolio
+### 2023 Portfolio Site
 
-This project was bootstrapped with [`create-r3f-app`](https://github.com/utsuboco/create-r3f-app)
+The landing page design for this website was largely inspired by the great [Daniel Kasabov](https://github.com/dkasabovn)'s own portfolio site.

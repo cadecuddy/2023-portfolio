@@ -4,8 +4,7 @@ import Scene from '@/components/canvas/Scene'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import { IoCopyOutline } from 'react-icons/io5'
-import { GoMute, GoUnmute } from 'react-icons/go'
-import { Suspense, useState } from 'react'
+import { Suspense } from 'react'
 import GameOfLife from '@/components/GameOfLife'
 import Navbar from '@/components/Navbar'
 
@@ -13,10 +12,8 @@ const Logo = dynamic(() => import('@/components/canvas/TF2'), { ssr: false })
 const inter = Inter({ subsets: ['latin'], weight: '800' })
 
 export default function Page() {
-  const [isPlaying, setIsPlaying] = useState(false)
-
   const copyToClipboard = () => {
-    navigator.clipboard.writeText('cadecuddy@gmail.com')
+    navigator.clipboard.writeText(process.env.NEXT_PUBLIC_EMAIL)
   }
 
   return (
@@ -56,9 +53,6 @@ export default function Page() {
           conversations about things!
         </p>
         <Navbar />
-        <audio id='music' loop>
-          <source src='song/song.mp3' type='audio/mpeg' />
-        </audio>
         <div className={inter.className}>
           <Suspense
             fallback={
@@ -68,26 +62,6 @@ export default function Page() {
             }>
             <GameOfLife />
           </Suspense>
-        </div>
-        <div className='absolute bottom-0 right-0 p-4 text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
-          {isPlaying ? (
-            <GoUnmute
-              className='text-4xl text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'
-              onClick={() => {
-                setIsPlaying(false)
-                document.getElementById('music').pause()
-              }}
-            />
-          ) : (
-            <GoMute
-              className='text-4xl text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'
-              onClick={() => {
-                setIsPlaying(true)
-                document.getElementById('music').volume = 0.3
-                document.getElementById('music').play()
-              }}
-            />
-          )}
         </div>
       </div>
     </div>

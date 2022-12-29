@@ -1,7 +1,7 @@
 const experience = [
   {
     company: 'Amazon',
-    title: 'Software Development Engineer Intern',
+    title: 'Software Engineering Intern',
     start: 'May 2022',
     end: 'August 2022',
     description: [
@@ -13,7 +13,7 @@ const experience = [
   },
   {
     company: 'Liquid Rocketry Lab',
-    title: 'Software Engineer',
+    title: 'Student Software Engineer',
     start: 'May 2020',
     end: 'Present',
     description: [
