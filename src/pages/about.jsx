@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { IoBackspace } from 'react-icons/io5'
 import Link from 'next/link'
 import ExperiencePanel from '@/components/about/ExperiencePanel'

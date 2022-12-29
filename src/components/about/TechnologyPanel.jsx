@@ -1,3 +1,4 @@
+/* eslint-disable tailwind/class-order */
 import { IoCode, IoLogoGithub } from 'react-icons/io5'
 import { DiReact } from 'react-icons/di'
 

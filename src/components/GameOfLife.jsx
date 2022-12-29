@@ -1,8 +1,9 @@
+/* eslint-disable tailwind/class-order */
 import React, { useState, useEffect } from 'react'
-import { Inconsolata, Life_Savers } from '@next/font/google'
+import { Inconsolata } from '@next/font/google'
 import { IoShuffle, IoPlay, IoPause, IoTrashBin, IoInformationCircle } from 'react-icons/io5'
 
-const inconsolata = Inconsolata({ weight: '400' })
+const inconsolata = Inconsolata({ subsets: ['latin'], weight: '400' })
 
 export default function GameOfLife() {
   const [grid, setGrid] = useState([])

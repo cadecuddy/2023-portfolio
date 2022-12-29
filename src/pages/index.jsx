@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import dynamic from 'next/dynamic'
 import { Box } from '@react-three/drei'
 import Scene from '@/components/canvas/Scene'
