@@ -20,7 +20,7 @@ export default function Experiences() {
           I'm currently in my senior year at North Carolina State University where I study Computer Science. In my free
           time I like to read science fiction, practice{' '}
           <Link href='https://en.wikipedia.org/wiki/Card_counting' target='_blank'>
-            <span className='font-bold text-yellow-500 hover:underline'>card counting</span>
+            <span className='font-bold text-yellow-500 hover:underline'>blackjack</span>
           </Link>
           , and listen to a breadth of{' '}
           <Link href='https://open.spotify.com/user/cade.49' target='_blank'>
