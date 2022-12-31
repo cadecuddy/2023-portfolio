@@ -4,18 +4,14 @@ import Link from 'next/link'
 import ExperiencePanel from '@/components/about/ExperiencePanel'
 import Socials from '@/components/about/Socials'
 import TechnologyPanel from '@/components/about/TechnologyPanel'
+import BackHome from '@/components/BackHome'
+import Layout from '@/components/Layout'
 
 export default function Experiences() {
   return (
-    <div className='container min-h-screen py-12 mx-auto'>
-      <div className='pt-4 mx-16 sm:mx-28 md:mx-40 lg:mx-64 xl:mx-[420px] text-neutral-300'>
-        <div className='flex flex-row text-2xl font-bold tracking-tight justify-start-center md:text-4xl sm:text-3xl'>
-          <Link href='/' passHref>
-            <span className='text-yellow-500 hover:cursor-pointer'>
-              <IoBackspace className='text-5xl ' />
-            </span>
-          </Link>
-        </div>
+    <Layout>
+      <BackHome BackLink='/' HasHome={false} />
+      <div className='mt-16'>
         <p className='mt-4 text-lg text-left'>
           I'm currently in my senior year at North Carolina State University where I study Computer Science. In my free
           time I like to read science fiction, practice{' '}
@@ -29,23 +25,21 @@ export default function Experiences() {
           .
           <br />
           <br />
-          <p className='mt-4 text-lg text-left'>
-            Building side projects is another free time activity of mine. My current main focus is a GeoGuessr-inspired
-            webapp called{' '}
-            <Link href='https://github.com/cadecuddy/GeoSleuth' target='_blank' passHref>
-              <span className='font-bold text-yellow-500 hover:underline'>GeoSleuth</span>
-            </Link>
-            .
-          </p>
+          Building side projects is another free time activity of mine. My current main focus is a GeoGuessr-inspired
+          webapp called{' '}
+          <Link href='https://github.com/cadecuddy/GeoSleuth' target='_blank' passHref>
+            <span className='font-bold text-yellow-500 hover:underline'>GeoSleuth</span>
+          </Link>
+          .
         </p>
-        <Socials />
-        <div className='pt-8 text-center'>
-          <ExperiencePanel />
-        </div>
-        <div className='pt-8 text-left'>
-          <TechnologyPanel />
-        </div>
       </div>
-    </div>
+      <Socials />
+      <div className='pt-8 text-center'>
+        <ExperiencePanel />
+      </div>
+      <div className='pt-8 text-left'>
+        <TechnologyPanel />
+      </div>
+    </Layout>
   )
 }
