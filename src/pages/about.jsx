@@ -11,7 +11,7 @@ export default function Experiences() {
   return (
     <Layout>
       <BackHome BackLink='/' HasHome={false} />
-      <div className='mt-16'>
+      <div>
         <p className='mt-4 text-lg text-left'>
           I'm currently in my senior year at North Carolina State University where I study Computer Science. In my free
           time I like to read science fiction, practice{' '}

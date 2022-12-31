@@ -7,7 +7,7 @@ export default function BlogPostLayout({ children, date, title }) {
     <>
       <Layout>
         <BackHome BackLink='/blog' HasHome={true} />
-        <div className='mt-16 text-left border-b border-neutral-500'>
+        <div className='mt-4 text-left border-b border-neutral-500'>
           <h1 className='text-xl'>Cade Cuddy</h1>
           <h2 className='text-neutral-400'>{date}</h2>
           <h1 className='mt-2 text-3xl font-bold text-yellow-500'>{title}</h1>
