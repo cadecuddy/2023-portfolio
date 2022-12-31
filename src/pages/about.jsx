@@ -10,7 +10,7 @@ export default function Experiences() {
     <div className='container min-h-screen py-12 mx-auto'>
       <div className='pt-4 mx-16 sm:mx-28 md:mx-40 lg:mx-64 xl:mx-[420px] text-neutral-300'>
         <div className='flex flex-row text-2xl font-bold tracking-tight justify-start-center md:text-4xl sm:text-3xl'>
-          <Link href='/'>
+          <Link href='/' passHref>
             <span className='text-yellow-500 hover:cursor-pointer'>
               <IoBackspace className='text-5xl ' />
             </span>
@@ -19,11 +19,11 @@ export default function Experiences() {
         <p className='mt-4 text-lg text-left'>
           I'm currently in my senior year at North Carolina State University where I study Computer Science. In my free
           time I like to read science fiction, practice{' '}
-          <Link href='https://en.wikipedia.org/wiki/Card_counting' target='_blank'>
+          <Link href='https://en.wikipedia.org/wiki/Card_counting' target='_blank' passHref>
             <span className='font-bold text-yellow-500 hover:underline'>blackjack</span>
           </Link>
           , and listen to a breadth of{' '}
-          <Link href='https://open.spotify.com/user/cade.49' target='_blank'>
+          <Link href='https://open.spotify.com/user/cade.49' target='_blank' passHref>
             <span className='font-bold text-yellow-500 hover:underline'>music</span>
           </Link>
           .
@@ -32,7 +32,7 @@ export default function Experiences() {
           <p className='mt-4 text-lg text-left'>
             Building side projects is another free time activity of mine. My current main focus is a GeoGuessr-inspired
             webapp called{' '}
-            <Link href='https://github.com/cadecuddy/GeoSleuth' target='_blank'>
+            <Link href='https://github.com/cadecuddy/GeoSleuth' target='_blank' passHref>
               <span className='font-bold text-yellow-500 hover:underline'>GeoSleuth</span>
             </Link>
             .
