@@ -8,17 +8,20 @@ export default function Navbar() {
   return (
     <>
       <div className='pt-6 text-xl font-bold'>
-        <Link href='/about'>
+        <Link href='/about' passHref prefetch={false}>
           <span className='float-left tracking-tighter text-left text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /ABOUT
           </span>
         </Link>
-        <Link href='/blog'>
+        <Link href='/blog' passHref prefetch={false}>
           <span className='text-center text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /BLOG
           </span>
         </Link>
-        <Link href='https://drive.google.com/file/d/1z1XbdESvybuzAG_vNfyDXFdP3IuiH-Z8/view?usp=sharing' target='_blank'>
+        <Link
+          href='https://drive.google.com/file/d/1z1XbdESvybuzAG_vNfyDXFdP3IuiH-Z8/view?usp=sharing'
+          target='_blank'
+          passHref>
           <span className='float-right text-right text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /RESUME
           </span>

@@ -32,7 +32,7 @@ export default function Page() {
         <p className='text-lg text-left select-none'>
           How's it going? I'm <span className='text-yellow-500 '>Cade</span>, a full-time CS student at NCSU. I love to
           solve complex problems with extensible and scalable code, and have
-          <Link href='/about'>
+          <Link href='/about' passHref prefetch={false}>
             <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'> experience </span>
           </Link>
           working on large-scale projects in industry.
@@ -41,7 +41,7 @@ export default function Page() {
         <br />
         <p className='text-lg text-left '>
           If you'd like to get a hold of me, feel free to reach out to me on
-          <Link href='https://www.linkedin.com/in/cadecuddy/' target='_blank'>
+          <Link href='https://www.linkedin.com/in/cadecuddy/' target='_blank' passHref>
             <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'> LinkedIn</span>
           </Link>{' '}
           or shoot me an{' '}
