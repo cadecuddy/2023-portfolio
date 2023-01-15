@@ -13,7 +13,7 @@ export default function Navbar() {
             /ABOUT
           </span>
         </Link>
-        <Link href='/blog' passHref prefetch={false}>
+        <Link href='https://blog.cadecuddy.com/' passHref prefetch={false} target='_blank'>
           <span className='text-center text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /BLOG
           </span>
