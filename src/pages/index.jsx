@@ -60,9 +60,7 @@ export default function Page() {
               <div className='flex flex-row items-center justify-center w-full h-full'>
                 <div className='w-1/2 bg-yellow-500 h-1/2' />
               </div>
-            }>
-            <GameOfLife />
-          </Suspense>
+            }></Suspense>
         </div>
       </div>
     </div>

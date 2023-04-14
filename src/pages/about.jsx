@@ -25,10 +25,10 @@ export default function Experiences() {
           .
           <br />
           <br />
-          Building side projects is another free time activity of mine. My current main focus is a GeoGuessr-inspired
-          webapp called{' '}
-          <Link href='https://github.com/cadecuddy/GeoSleuth' target='_blank' passHref>
-            <span className='font-bold text-yellow-500 hover:underline'>GeoSleuth</span>
+          Building side projects is another free time activity of mine. My current main focus is a distributed key-value
+          stored called{' '}
+          <Link href='https://github.com/cadecuddy/cckv' target='_blank' passHref>
+            <span className='font-bold text-yellow-500 hover:underline'>CCKV</span>
           </Link>
           .
         </p>
