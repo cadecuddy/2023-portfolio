@@ -13,15 +13,12 @@ export default function Navbar() {
             /ABOUT
           </span>
         </Link>
-        <Link href='https://blog.cadecuddy.com/' passHref prefetch={false} target='_blank'>
+        <Link href={'https://blog.' + location.hostname} passHref prefetch={false} target='_blank'>
           <span className='text-center text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /BLOG
           </span>
         </Link>
-        <Link
-          href='https://drive.google.com/file/d/1z1XbdESvybuzAG_vNfyDXFdP3IuiH-Z8/view?usp=sharing'
-          target='_blank'
-          passHref>
+        <Link href='/resume.pdf' target='_blank' passHref>
           <span className='float-right text-right text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /RESUME
           </span>
