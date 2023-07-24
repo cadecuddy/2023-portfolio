@@ -1,6 +1,7 @@
 /* eslint-disable tailwind/class-order */
 import { IoCode, IoLogoGithub } from 'react-icons/io5'
 import { DiReact } from 'react-icons/di'
+import { technologies, languages, tools, frameworks } from '@/config/experience'
 
 export default function TechnologyPanel() {
   return (
@@ -13,12 +14,9 @@ export default function TechnologyPanel() {
             Languages
           </h3>
           <ul className='mt-1 text-neutral-500'>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Go</li>
-            <li>Rust</li>
-            <li>Typescript</li>
-            <li>SQL</li>
+            {languages.map((language) => (
+              <li key={language}>{language}</li>
+            ))}
           </ul>
         </div>
         <div className='sm:flex-row sm:justify-center'>
@@ -27,13 +25,9 @@ export default function TechnologyPanel() {
             Frameworks
           </h3>
           <ul className='mt-1 text-neutral-500'>
-            <li>React</li>
-            <li>tRPC</li>
-            <li>Node.JS</li>
-            <li>Express</li>
-            <li>TailwindCSS</li>
-            <li>Next.JS</li>
-            <li>Prisma</li>
+            {frameworks.map((framework) => (
+              <li key={framework}>{framework}</li>
+            ))}
           </ul>
         </div>
         <div className='sm:flex-row sm:justify-end'>
@@ -42,11 +36,9 @@ export default function TechnologyPanel() {
             Tools
           </h3>
           <ul className='mt-1 text-neutral-500'>
-            <li>Git</li>
-            <li>UNIX</li>
-            <li>Docker</li>
-            <li>AWS</li>
-            <li>Figma</li>
+          {tools.map((tool) => (
+              <li key={tool}>{tool}</li>
+            ))}
           </ul>
         </div>
       </div>
