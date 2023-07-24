@@ -1,10 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'], weight: '800' })
 
 export default function Navbar() {
+  const [hostname, setHostname] = useState('')
+
+  useEffect(() => {
+    setHostname(window.location.hostname.replace('www.', ''))
+  }, [])
+
   return (
     <>
       <div className='pt-6 text-xl font-bold'>
@@ -13,7 +20,7 @@ export default function Navbar() {
             /ABOUT
           </span>
         </Link>
-        <Link href={'https://blog.' + location.hostname} passHref prefetch={false} target='_blank'>
+        <Link href={'https://blog.' + hostname} passHref prefetch={false} target='_blank'>
           <span className='text-center text-yellow-500 transition-colors duration-150 hover:text-yellow-600'>
             /BLOG
           </span>
