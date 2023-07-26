@@ -1,7 +1,7 @@
 /* eslint-disable tailwind/class-order */
 import { IoCode, IoLogoGithub } from 'react-icons/io5'
 import { DiReact } from 'react-icons/di'
-import { technologies, languages, tools, frameworks } from '@/config/experience'
+import { technologies, languages, tools, frameworks } from '@/config/information'
 
 export default function TechnologyPanel() {
   return (
@@ -36,7 +36,7 @@ export default function TechnologyPanel() {
             Tools
           </h3>
           <ul className='mt-1 text-neutral-500'>
-          {tools.map((tool) => (
+            {tools.map((tool) => (
               <li key={tool}>{tool}</li>
             ))}
           </ul>

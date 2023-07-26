@@ -33,7 +33,7 @@ export default function Navbar() {
       </div>
       <div
         className={inter.className + ' text-2xl font-extrabold text-center bg-yellow-600 text-neutral-900 select-none'}>
-        HAVE A LOOK AROUND 👀
+        have a look around :)
       </div>
     </>
   )
