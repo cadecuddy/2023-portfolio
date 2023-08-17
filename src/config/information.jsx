@@ -4,7 +4,7 @@ const experience = [
     title: 'Software Engineering Intern',
     start: 'May 2023',
     end: 'August 2023',
-    description: 'CURRENTLY architecting an experimental LLM system for anomaly detection in large quantities of data.',
+    description: "Led the adoption of LLM technology within organization, achieving an average 84% detection rate for anomalies in Amazon's supply chain data using generative AI. Designed and implemented generative AI anomaly detection system using text embeddings, Python, LangChain, AWS Lambda, and a specialized vector database. Deployed service via CI/CD pipeline & worked with cross-functional team of scientists & engineers to successfully integrate LLM solution with production data.",
     technologies: ['Python', 'LangChain', 'AWS'],
   },
   {
