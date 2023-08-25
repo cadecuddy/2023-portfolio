@@ -25,16 +25,10 @@ export default function Experiences() {
           .
           <br />
           <br />
-          Building side projects is another free time activity of mine. My current main focus is a distributed key-value
-          stored called{' '}
-          <Link href='https://github.com/cadecuddy/cckv' target='_blank' passHref>
-            <span className='font-bold text-yellow-500 hover:underline'>CCKV</span>
-          </Link>{' '}
-          as well as a{' '}
+          Building side projects is another free time activity of mine. My current main focus is a {' '}
           <Link href='https://www.casecalculator.app/' target='_blank' passHref>
             <span className='font-bold text-yellow-500 hover:underline'>CSGO case calculator</span>
-          </Link>
-          .
+          </Link> and I'm starting on a custom BitTorrent client once school dies down.
         </p>
       </div>
       <Socials />

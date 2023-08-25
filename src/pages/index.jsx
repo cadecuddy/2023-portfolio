@@ -30,7 +30,7 @@ export default function Page() {
       </div>
       <div className={' mx-16 sm:mx-28 md:mx-40 lg:mx-64 xl:mx-[420px] text-neutral-300 pt-4 select-none'}>
         <p className='text-lg text-left select-none'>
-          How's it going? I'm <span className='text-yellow-500 '>Cade</span>, a full-time CS student at NCSU. I love to
+          How's it going? I'm <strong>Cade</strong>, a final-semester CS student at NCSU. I love to
           solve complex problems with extensible and scalable code, and have
           <Link href='/about' passHref prefetch={false}>
             <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'> experience </span>
@@ -40,6 +40,15 @@ export default function Page() {
         <br />
         <br />
         <p className='text-lg text-left '>
+          My interests lie in <span className='font-bold'>distributed systems</span>,{' '}
+          <span className='font-bold'>full-stack development</span>, and{" "}
+          <span className='font-bold'>data engineering</span>. When I find the time, I like making 
+          {" "}
+          <Link href='https://www.github.com/cadecuddy' passHref prefetch={false} target='_blank'>
+          <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'>things</span> {" "}
+          </Link>
+          related to those topics.
+
           If you'd like to get a hold of me, feel free to reach out to me on
           <Link href='https://www.linkedin.com/in/cadecuddy/' target='_blank' passHref>
             <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'> LinkedIn</span>
@@ -48,10 +57,7 @@ export default function Page() {
           <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer' onClick={copyToClipboard}>
             email <IoCopyOutline className='inline-block text-xl' onClick={copyToClipboard} />
           </span>
-          . Always apt to work on <span className='font-bold'>web apps</span>,{' '}
-          <span className='font-bold'>distributed systems</span>, and / or{' '}
-          <span className='font-bold'>command line</span> projects when I get the time. I'm also down to just have
-          conversations about things!
+          . 
         </p>
         <Navbar />
         <div className={inter.className}>
