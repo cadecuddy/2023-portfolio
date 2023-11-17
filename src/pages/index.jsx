@@ -41,8 +41,8 @@ export default function Page() {
         <br />
         <p className='text-lg text-left '>
           My interests lie in <span className='font-bold'>distributed systems</span>,{' '}
-          <span className='font-bold'>full-stack development</span>, and{" "}
-          <span className='font-bold'>data engineering</span>. When I find the time, I like making 
+          <span className='font-bold'>backend web development</span>, and{" "}
+          <span className='font-bold'>applications development</span>. When I find the time, I like making 
           {" "}
           <Link href='https://www.github.com/cadecuddy' passHref prefetch={false} target='_blank'>
           <span className='text-yellow-500 hover:text-yellow-600 hover:cursor-pointer'>things</span> {" "}
